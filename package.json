@@ -2,8 +2,7 @@
   "name": "gxc-frontend-base",
   "author": "liuzongyuan@gxb.io",
   "version": "0.1.0",
-  "description": "gxc frontend base repo, inlcudes common util, rules, style...",
-  "main": "build/index.js",
+  "description": "gxc frontend base repo, inlcudes common util, rules, style, const, vue plugin, vue filter, vue mixin etc",
   "keywords": [
     "es6",
     "babel",
