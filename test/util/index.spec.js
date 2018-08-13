@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import {accMult} from '../src/js/util/index'
+import {accMult} from '../../src/script/util/index'
 
 describe("accMult", () => {
   before(() => {
