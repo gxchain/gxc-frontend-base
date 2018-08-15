@@ -1,1 +1,1 @@
-export const contractNameFormat = /^[\w]+[\w.-]*[\w]$/
+export const contractNameFormat = /^[A-Za-z0-9]+[\w.-]*[\w]$/

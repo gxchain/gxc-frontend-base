@@ -12,6 +12,10 @@ describe("contractNameFormat", () => {
     expect(contractNameFormat.test('-lzy')).to.be.false
   })
 
+  it("should not match if start with _", function() {
+    expect(contractNameFormat.test('_lzy')).to.be.false
+  })
+
   it("should not match if end with .", function() {
     expect(contractNameFormat.test('lzy.')).to.be.false
   })
