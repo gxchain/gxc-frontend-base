@@ -3,4 +3,4 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var contractNameFormat = exports.contractNameFormat = /^[\w]+[\w.-]*[\w]$/;
+var contractNameFormat = exports.contractNameFormat = /^[A-Za-z0-9]+[\w.-]*[\w]$/;
