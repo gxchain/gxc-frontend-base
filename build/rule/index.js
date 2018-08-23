@@ -6,4 +6,4 @@ Object.defineProperty(exports, "__esModule", {
 /**
  * base 58 private key format
  */
-var privateKeyFormat = exports.privateKeyFormat = /^[5KL][1-9A-HJ-NP-Za-km-z]{50,51}$/;
+var wifKeyFormat = exports.wifKeyFormat = /^[5KL][1-9A-HJ-NP-Za-km-z]{50,51}$/;
