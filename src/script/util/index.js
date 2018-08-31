@@ -1,3 +1,5 @@
+const $client = this || {}
+
 /**
  * multiply, no overflow
  * @param {Number} arg1 
@@ -16,4 +18,28 @@ export const accMult = (arg1, arg2) => {
     } catch (e) {
     }
     return Number(s1.replace('.', '')) * Number(s2.replace('.', '')) / Math.pow(10, m)
+}
+
+/**
+ * utf8_to_b64
+ * @param {String} str 
+ */
+export function utf8_to_b64(str) {
+    if($client.btoa){
+        return $client.btoa(unescape(encodeURIComponent(str)))
+    }else{
+        return new Buffer(str).toString('base64')
+    }
+}
+
+/**
+ * b64_to_utf8
+ * @param {String} str 
+ */
+export function b64_to_utf8(str) {
+    if($client.atob){
+        return decodeURIComponent(escape($client.atob(str)))
+    }else{
+        return new Buffer(str, 'base64').toString()
+    }
 }
