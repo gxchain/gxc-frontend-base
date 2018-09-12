@@ -6,7 +6,7 @@ function isArrayType(type) {
     return type.indexOf('[]') !== -1
 }
 
-const serializeCallData = (action, params, abi) => {
+export const serializeCallData = (action, params, abi) => {
     abi = cloneDeep(abi)
     let struct = abi.structs.find(s => s.name === action)
     let b = new ByteBuffer(ByteBuffer.DEFAULT_CAPACITY, ByteBuffer.LITTLE_ENDIAN)
@@ -37,8 +37,4 @@ const serializeCallData = (action, params, abi) => {
         }
     })
     return Buffer.from(b.copy(0, b.offset).toBinary(), 'binary')
-}
-
-export default {
-    serializeCallData
 }
