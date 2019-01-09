@@ -33,7 +33,7 @@ export const serializeCallData = (action, params, abi) => {
             if (isArrayFlag) {
                 type = types.set(type)
             }
-            type.appendByteBuffer(b, value)
+            type.appendByteBuffer(b, type.fromObject(value))
         }
     })
     return Buffer.from(b.copy(0, b.offset).toBinary(), 'binary')

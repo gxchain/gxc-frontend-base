@@ -1,7 +1,7 @@
 {
   "name": "gxc-frontend-base",
   "author": "liuzongyuan@gxb.io",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "gxc frontend base repo, inlcudes common util, rules, style, const, vue plugin, vue filter, vue mixin etc",
   "keywords": [
     "es6",
@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "bytebuffer": "^5.0.1",
-    "gxbjs": "^1.2.89",
+    "gxbjs": "^1.3.11",
     "lodash": "^4.17.10"
   },
   "devDependencies": {
