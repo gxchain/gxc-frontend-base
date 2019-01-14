@@ -5,6 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 /**
  * copy from https://github.com/uupaa/UserAgent.js
+ * temp remove WebGLDetector
  */
 var global = window;
 // --- technical terms / data structure --------------------
@@ -262,8 +263,10 @@ function _getAndroidDevice(ua, retina) {
     return "";
 }
 
+// TODO: temp remove WebGLDetector
 function _getiOSDevice(ua, retina, longEdge, osVersion) {
-    var WebGLDetector = global["WebModule"]["WebGLDetector"] || {};
+    // var WebGLDetector = global["WebModule"]["WebGLDetector"] || {};
+    var WebGLDetector = {};
 
     if ("detect" in WebGLDetector) {
         WebGLDetector["detect"]();
