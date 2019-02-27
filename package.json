@@ -9,11 +9,6 @@
     "eslint",
     "npm package"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "babel-node precommit.js"
-    }
-  },
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --recursive",
     "build": "npm run build:script && npm run build:style",
